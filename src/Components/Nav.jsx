@@ -15,7 +15,7 @@ const Nav = ({ isUser, chatNavBarStatus, setChatNavBarStatus }) => {
 				</div>
 				<SignOut /> {/* to move in the burger */}
 			</ul>
-
+			<p>{isUser.displayName}</p>
 			<ChatNavBar
 				chatNavBarStatus={chatNavBarStatus}
 				setChatNavBarStatus={setChatNavBarStatus}

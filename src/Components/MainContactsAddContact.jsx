@@ -10,8 +10,8 @@ export function MainContactsAddContact({ isUser, userData }) {
 	const handleAddContact = async (e) => {
 		if (e.key === "Enter" || e.key === undefined) {
 			const response = await sendFriendRequest(
+				isUser.email,
 				addContactInput.current.value,
-				isUser,
 			);
 			setErr(response)
 			console.log(response);

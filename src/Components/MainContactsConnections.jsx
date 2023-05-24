@@ -23,16 +23,15 @@ export function MainContactsConnections({ isUser, userData }) {
 						<div className="flex" key={crypto.randomUUID()}>
 							<div className="flex mx-2 gap-[1rem] basis-[14%] ">
 								<img
-									src="./1.jpg"
+									src={req.photo}
 									alt="avatar"
-									className="w-[80px] h-[80px] bg-black rounded-full mx-1"
+									className="w-[80px] h-[auto] bg-black rounded-full mx-1 my-auto"
 								/>
 							</div>
 							<div className="basis-[72%] flex flex-col">
-								<p className="line-clamp-1">Name Xz</p>
+								<p className="line-clamp-1">{req.name}</p>
 								<p className="line-clamp-2">
-									Status Status Status Status Status Status Status Status Status
-									Status Status Status Status Status{" "}
+									{req.status}
 								</p>
 							</div>
 							<div className="text-3xl basis-[14%] text-center flex flex-col justify-between">
